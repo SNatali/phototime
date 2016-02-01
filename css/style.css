@@ -25,6 +25,14 @@ body{
   font-family: "GothamProBold";
 
 }
+.container{
+  max-width: 1280px;
+  min-width: 768px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .clearfix::after{
   content: " ";
   display: table;
@@ -115,22 +123,16 @@ body{
 
 .page-content{
   /*max-width: 1280px;*/
-  min-width: 768px;
-  background: #f5f6f7;
-  padding-top: 120px;
+ min-width: 768px;
+  background: url("../img/iphone.png") no-repeat 50% 50%;
+  background-size: cover;
+  min-height: 550px;
   
 }
-.container{
-  width: 1024px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 .content-wrap{
-  position: relative;
+  /*position: relative;
   min-height: 398px;
-  overflow: hidden;
+  overflow: hidden;*/
 }
 .columns-wrap{
   position: relative;
@@ -140,6 +142,7 @@ body{
 .column-left{
     width: 45%;
     text-align: left;
+    padding-top: 120px;
 }
 .page-content__headline{
   text-align: left;
@@ -163,10 +166,10 @@ body{
    letter-spacing: 0.15em;
 }
 .page-content__screen{
-  position: absolute;
+  /*position: absolute;
   margin: 0;
   top: 0;
-  left: 34%;
+  left: 34%;*/
 }
 .page-design{
   min-width: 768px;
@@ -183,7 +186,7 @@ body{
 }
 .column-right{
   width: 40%;
-  margin-left: 60%;
+  float: right;
   text-align: left;
 }
 .page-design__headline{
@@ -299,21 +302,30 @@ input[type="email"]{
   font-size: 16px;
   color: #373737;
   text-transform: uppercase;
-  padding:23px 100px 19px 20px;
+  padding:21px;
   border-radius: 2px 0 0 2px;
   border: 1px solid #fff;
   letter-spacing: 0.15em;
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
 } 
 .page-email__input{
   font-size: 0;
 }
 .page-email__btn{
-  padding: 14px 20px 20px 20px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 17px;
   background: #16a085;
   border-radius: 0 2px 2px 0;
   border: none;
 }
+.page-email__btn:hover{
+  color: #ccc;
+}
 .page-download{
+  min-width: 768px;
   padding-top: 90px;
   padding-bottom: 110px;
   background: #f5f6f7;
@@ -377,7 +389,7 @@ input[type="email"]{
   color: #ccc;
 }
 .page-footer{
-  max-width: 1280px;
+
   min-width: 768px;
   padding-top: 45px;
   padding-bottom: 30px;
@@ -684,9 +696,7 @@ input[type="email"]{
   margin: 0;
   /*border-radius: 0 2px 2px 0;*/
 }
-.fa-check:hover:before{
-  color: #ccc;
-}
+
 .fa-apple:before {
   content: "\f179";
   color: #fff;
