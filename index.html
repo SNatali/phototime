@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
 
@@ -78,26 +78,49 @@
 	</section>
 
 	<section class="page-design">
-		<div class="container ">
+		<div class="container">
 			<div class="columns-wrap">
-			<figure class="page-design__phone">
-				<img src="img/phone.png" alt="" width="314" height="617">
-			</figure>
-			<div class="column-right">
-				<h3 class="page-design__headline">design</h3>
-				<p class="page-design__article ">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <b>enim ad minim</b> veniam, quis ut aliquip ex ea commodo consequat.
-				</p>
-					<a class="btn" href="#">
-						learn more
-					</a>
-
-					<p class="page-design__date">01/05</p>
-					<p class="page-design__icon">
-						<i class="fa fa-angle-left"></i>
-						<i class="fa fa-angle-right"></i>
-					</p>
+				<div class="slider owl-carousel" id="owl-slider">
+					<div class="slide">
+						<figure class="page-design__phone">
+							<img src="img/phone.png" alt="" width="314" height="617">
+						</figure>
+						<div class="column-right">
+							<h3 class="page-design__headline">design</h3>
+							<p class="page-design__article ">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <b>enim ad minim</b> veniam, quis ut aliquip ex ea commodo consequat.
+							</p>
+							<a class="btn" href="#">
+								learn more
+							</a>
+						</div>
 					</div>
+					<!-- end of slide -->
+
+					<div class="slide">
+						<figure class="page-design__phone">
+							<img src="img/phone.png" alt="" width="314" height="617">
+						</figure>
+						<div class="column-right">
+							<h3 class="page-design__headline">design</h3>
+							<p class="page-design__article ">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <b>enim ad minim</b> veniam, quis ut aliquip ex ea commodo consequat.
+							</p>
+							<a class="btn" href="#">
+								learn more
+							</a>
+						</div>
+					</div>
+					<!-- end of slide -->
+				</div>
+
+
+
+				<div class="page-design__icon">
+					<p class="page-design__date">01/05</p>
+					<i class="fa fa-angle-left"></i>
+					<i class="fa fa-angle-right"></i>
+				</div>
 			</div>
 		</div>
 </section>
@@ -152,12 +175,12 @@
 		<p class="page-download__text">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat.
 		</p>
-		<div class="page-download__link">
-			<a class="page-download__link--applestore" href="">
+		<div class="page-download__links">
+			<a class="page-download__link-item" href="">
 				apple store
 				<i class="fa fa-apple"></i>
 			</a>
-			<a class="page-download__link--playstore" href=""> 
+			<a class="page-download__link-item" href=""> 
 			play store
 			<i class="fa fa-android"></i>
 			</a>

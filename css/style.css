@@ -124,7 +124,7 @@ body{
 .page-content{
   /*max-width: 1280px;*/
  min-width: 768px;
-  background: url("../img/iphone.png") no-repeat 50% 50%;
+  background: url("../img/screen.png") no-repeat 50% 50%;
   background-size: cover;
   min-height: 550px;
   
@@ -219,9 +219,16 @@ body{
   color: #373737;
   padding-top: 64px;
 }
+
+.slider {
+  position: relative;
+}
 .page-design__icon{
   text-align: left;
   margin: 0;
+  position: absolute;
+  bottom: 50px;
+  right: 450px;
 }
 .page-portfolio{
   min-width: 768px;
@@ -352,12 +359,12 @@ input[type="email"]{
    font-family: "GothamProRegular";
    letter-spacing: 0.15em;
 }
-.page-download__link{
+.page-download__links{
   text-align: center;
   font-size: 0;
 
 }
-.page-download__link--applestore{
+.page-download__link-item{
   display: inline-block;
   text-align: center;
   font-size: 16px;
@@ -369,26 +376,24 @@ input[type="email"]{
   border-radius: 2px 2px 2px 2px;
   margin-right: 2%;
   letter-spacing: 0.15em;
-  
 }
-.page-download__link--applestore:hover{
+.page-download__link-item:last-child {
+  margin: 0;
+}
+
+
+
+.page-download__link-item:hover i:before,
+.page-download__link-item:hover {
   color: #ccc;
+  -webkit-transition-duration: .1s;
+  -o-transition-duration: .1s;
+  transition-duration: .1s;
 }
-.page-download__link--playstore{
-  display: inline-block;
-  text-align: center;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #1abc9c;
-  color: #fff;
-  padding: 14px 0 15px 20px;
-   border-radius: 2px 2px 2px 2px;
-   letter-spacing: 0.15em;
-}
-.page-download__link--playstore:hover{
-  color: #ccc;
-}
+
+
+
+
 .page-footer{
 
   min-width: 768px;
@@ -429,19 +434,6 @@ input[type="email"]{
   color: #373737;
   letter-spacing: 0.15em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -675,6 +667,9 @@ input[type="email"]{
 .fa-dribbble:hover:before{
   color: #ccc;
 }
+
+
+
 .fa-angle-left:before {
   content: "\f104";
   color: #373737;
@@ -707,9 +702,7 @@ input[type="email"]{
   margin-left: 80px;
   border-radius: 0 2px 2px 0;
 }
-.fa-apple:hover:before{
-  color: #ccc;
-}
+
 .fa-android:before {
   content: "\f17b";
   color: #fff;
@@ -719,10 +712,6 @@ input[type="email"]{
   border-radius: 0 2px 2px 0;
   margin-left: 80px;
 }
-.fa-android:hover:before{
-  color: #ccc;
-}
-
 
 
 
