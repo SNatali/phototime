@@ -3,18 +3,18 @@ $("#owl-slider").owlCarousel({
     // Most important owl features
     items : 1,
     itemsCustom : false,
-    itemsDesktop : [1199,4],
+    itemsDesktop : [1280,4],
     itemsDesktopSmall : [980,3],
     itemsTablet: [768,2],
     itemsTabletSmall: false,
     itemsMobile : [479,1],
-    singleItem : false,
+    singleItem : true,
     itemsScaleUp : false,
  
     //Basic Speeds
-    slideSpeed : 200,
-    paginationSpeed : 800,
-    rewindSpeed : 1000,
+    slideSpeed : 900,
+    paginationSpeed : 1900,
+    rewindSpeed : 3000,
  
     //Autoplay
     autoPlay : false,
@@ -27,8 +27,8 @@ $("#owl-slider").owlCarousel({
     scrollPerPage : false,
  
     //Pagination
-    pagination : true,
-    paginationNumbers: true,
+    pagination : false,
+    paginationNumbers: false,
  
     // Responsive 
     responsive: true,
