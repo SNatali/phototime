@@ -40,6 +40,10 @@
 .owl-carousel .owl-item{
 	float: left;
 }
+/*.owl-item{
+	width: 896px;
+	min-height: 398px;
+}*/
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
 	cursor: pointer;
