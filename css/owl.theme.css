@@ -6,7 +6,13 @@
 .owl-theme .owl-controls{
 	margin-top: 10px;
 	text-align: center;
+
 }
+/*.owl-controls{
+	position: absolute;
+	bottom: 30px;
+	right: 290px;
+}*/
 
 /* Styling Next and Prev buttons */
 
@@ -20,10 +26,10 @@
 	font-size: 12px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
-	border-radius: 30px;
-	background: #869791;
+	/*border-radius: 30px;
+	background: #869791;*/
 	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
